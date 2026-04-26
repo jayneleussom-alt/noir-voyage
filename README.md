@@ -1,15 +1,23 @@
 # Hi, I'm Jayne 👋
 
-Aspiring Software Engineer  
-Currently building **Noir Voyage** – a cultural travel platform for students  
+# Noir Voyage 🌍
 
-## 🚀 Projects
-- Noir Voyage (in progress)
+Noir Voyage is a cultural travel platform designed to help students explore destinations connected to African and diaspora heritage.
+
+## ✨ Features (MVP)
+- Browse cultural destinations  
+- Create and join group trips  
+- Connect with other student travelers  
 
 ## 🛠️ Tech Stack
 - React.js  
 - Node.js  
 - MongoDB  
 
-## 📫 Connect with me
-- LinkedIn: https://uk.linkedin.com/in/jayne-tankoua-072044302
+## 🚧 Status
+This project is currently in development.
+
+## 🌱 Future Features
+- AI travel recommendations  
+- Student discounts integration  
+- Cultural event calendar  
