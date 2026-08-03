@@ -10,7 +10,7 @@ function JoinTripModal({ isOpen, onClose }) {
 
   const [submitted, setSubmitted] = useState(false)
 
-  if (!isOpen) return null
+  if (!isOpen) return null;
 
   const handleChange = (e) => {
     setFormData({
