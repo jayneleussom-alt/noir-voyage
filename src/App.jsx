@@ -1,6 +1,10 @@
+import { useState } from 'react'
 import './App.css'
+import JoinTripModal from './JoinTripModal'
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
   return (
     <div className="app">
       {/* Navigation Bar */}
@@ -20,7 +24,9 @@ function App() {
           Discover cultural travel destinations across African and diaspora heritage, 
           tailored specifically for student travelers.
         </p>
-        <button className="btn-primary">Explore Destinations</button>
+        <button className="btn-primary" onClick={() => setIsModalOpen(true)}>
+          Join a Group Trip
+        </button>
       </header>
 
       {/* Features MVP Section */}
@@ -32,14 +38,28 @@ function App() {
         <div className="card">
           <h3>👥 Student Group Trips</h3>
           <p>Create or join group itineraries to explore the world with like-minded students.</p>
+          <button 
+            className="btn-primary" 
+            style={{ marginTop: '1rem', fontSize: '0.875rem' }}
+            onClick={() => setIsModalOpen(true)}
+          >
+            Find Trips
+          </button>
         </div>
         <div className="card">
           <h3>💬 Student Network</h3>
           <p>Connect, share tips, and build lifelong friendships before you even take off.</p>
         </div>
       </section>
+
+      {/* Join Trip Modal Component */}
+      <JoinTripModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
     </div>
   )
 }
 
 export default App
+
